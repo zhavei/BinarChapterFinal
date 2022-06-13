@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/first_fragment"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Play"
+        />
+
+    <item
+        android:id="@+id/second_fragment"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Leader Board"
+        />
+
+    <item
+        android:id="@+id/trirdFragment"
+        android:icon="@mipmap/ic_launcher"
+        android:title="History"
+        />
+
+
+
+</menu>
