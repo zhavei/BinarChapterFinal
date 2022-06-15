@@ -14,6 +14,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/fragment_container_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/black"
         app:menu="@menu/nav_menu" />
 
     <fragment
