@@ -2,20 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/first_fragment"
-        android:icon="@mipmap/ic_launcher"
+        android:id="@+id/menu_first_fragment"
+        android:icon="@drawable/ic_baseline_account_balance_24"
         android:title="Play"
         />
 
     <item
-        android:id="@+id/second_fragment"
-        android:icon="@mipmap/ic_launcher"
+        android:id="@+id/menu_second_fragment"
+        android:icon="@drawable/ic_baseline_ac_unit_24"
         android:title="Leader Board"
         />
 
     <item
-        android:id="@+id/trirdFragment"
-        android:icon="@mipmap/ic_launcher"
+        android:id="@+id/menu_trird_Fragment"
+        android:icon="@drawable/ic_baseline_airline_seat_flat_angled_24"
         android:title="History"
         />
 
