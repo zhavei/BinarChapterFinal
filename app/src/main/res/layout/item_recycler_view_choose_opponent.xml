@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemview_item_choose_opponent"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="3dp"
     android:backgroundTint="#937F7F"
     app:cardCornerRadius="8dp">
 
     <TextView
+        android:id="@+id/tv_item_choose_opponent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -16,5 +19,13 @@
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold" />
+
+    <!--<Button
+        android:id="@+id/btn__item_choose_opponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="12dp"
+        android:text="edit" />-->
 
 </androidx.cardview.widget.CardView>
