@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class User(
+data class UserChoose(
     @PrimaryKey(autoGenerate = true)
     val id: Int? = null,
 

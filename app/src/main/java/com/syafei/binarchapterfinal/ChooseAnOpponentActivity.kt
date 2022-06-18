@@ -11,9 +11,9 @@ import kotlinx.coroutines.launch
 class ChooseAnOpponentActivity : AppCompatActivity() {
 
     private val userDummy = listOf(
-        User(name = "ronaldo"),
-        User(name = "messi"),
-        User(name = "neymar")
+        UserChoose(name = "ronaldo"),
+        UserChoose(name = "messi"),
+        UserChoose(name = "neymar")
     )
 
     private var _binding: ActivityChooseAnOpponentBinding? = null

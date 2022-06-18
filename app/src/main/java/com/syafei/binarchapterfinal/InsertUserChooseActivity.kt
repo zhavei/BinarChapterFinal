@@ -36,7 +36,7 @@ class InsertUserChooseActivity : AppCompatActivity() {
         binding.btnUserInsertChoose.setOnClickListener {
             val name: String = binding.etUserInsertChose.text.toString()
 
-            val newChoiseUser = User(
+            val newChoiseUser = UserChoose(
                 name = name
             )
 
@@ -51,11 +51,11 @@ class InsertUserChooseActivity : AppCompatActivity() {
         }
     }
 
-    private fun saveToDatabase(user: User) {
+    private fun saveToDatabase(userChoose: UserChoose) {
 
         GlobalScope.launch {
-            val addUser = userChooseDao?.addUser(user)
-            println("new added user ---> $addUser")
+            val addUser = userChooseDao?.addUser(userChoose)
+            println("new added userChoose ---> $addUser")
 
             runOnUiThread {
                 binding.etUserInsertChose.setText("")

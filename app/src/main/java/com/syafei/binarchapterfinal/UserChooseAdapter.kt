@@ -6,12 +6,12 @@ import androidx.recyclerview.widget.RecyclerView
 
 class UserChooseAdapter : RecyclerView.Adapter<UserChooseViewHolder>() {
 
-    private val userList: MutableList<User> = mutableListOf()
+    private val userChooseList: MutableList<UserChoose> = mutableListOf()
 
 
-    fun addList(list: List<User>) {
-        userList.clear()
-        userList.addAll(list)
+    fun addList(list: List<UserChoose>) {
+        userChooseList.clear()
+        userChooseList.addAll(list)
         notifyDataSetChanged()
     }
 
@@ -22,11 +22,11 @@ class UserChooseAdapter : RecyclerView.Adapter<UserChooseViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: UserChooseViewHolder, position: Int) {
-        val itemUser = userList[position]
+        val itemUser = userChooseList[position]
         holder.bind(itemUser)
     }
 
     override fun getItemCount(): Int {
-        return userList.size
+        return userChooseList.size
     }
 }

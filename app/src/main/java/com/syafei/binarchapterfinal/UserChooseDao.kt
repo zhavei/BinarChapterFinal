@@ -7,16 +7,16 @@ import androidx.room.OnConflictStrategy.REPLACE
 @Dao
 interface UserChooseDao {
 
-    @Query("SELECT * from User")
-    fun getAllUser(): List<User>
+    @Query("SELECT * from UserChoose")
+    fun getAllUser(): List<UserChoose>
 
     @Insert(onConflict = REPLACE)
-    fun addUser(user: User): Long
+    fun addUser(userChoose: UserChoose): Long
 
     @Update
-    fun updateUser(user: User): Int
+    fun updateUser(userChoose: UserChoose): Int
 
     @Delete
-    fun deleteUser(user: User): Int
+    fun deleteUser(userChoose: UserChoose): Int
 
 }

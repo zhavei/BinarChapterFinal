@@ -9,15 +9,15 @@ import com.syafei.binarchapterfinal.databinding.ItemRecyclerViewChooseOpponentBi
 class UserChooseViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
 
-    fun bind(user: User) = ItemRecyclerViewChooseOpponentBinding.bind(itemView).run {
-        tvItemChooseOpponent.text = user.name
+    fun bind(userChoose: UserChoose) = ItemRecyclerViewChooseOpponentBinding.bind(itemView).run {
+        tvItemChooseOpponent.text = userChoose.name
 
         itemView.setOnClickListener {
             val intent = Intent(itemView.context, PlayGameActivity::class.java).apply {
                 putExtra(PlayGameActivity.NAMECHOOSEN, position)
                 putExtra(PlayGameActivity.NAMECHOOSEN, tvItemChooseOpponent.text)
             }
-            Toast.makeText(itemView.context, "Halo Selamat Datang ${user.name}", Toast.LENGTH_SHORT)
+            Toast.makeText(itemView.context, "Halo Selamat Datang ${userChoose.name}", Toast.LENGTH_SHORT)
                 .show()
 
             itemView.context.startActivity(intent)
