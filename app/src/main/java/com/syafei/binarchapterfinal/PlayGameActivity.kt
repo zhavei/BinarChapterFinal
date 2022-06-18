@@ -21,6 +21,8 @@ class PlayGameActivity : AppCompatActivity() {
         val greating = "Haloo selamat datang $intent"
         binding?.tvPlayGameActivity?.text = greating
 
+        supportActionBar?.title = intent?.uppercase()
+
 
     }
 }
